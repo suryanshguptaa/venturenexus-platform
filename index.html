@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentureNexus - Discover Your Next Startup Event</title>
+    <meta name="description" content="India's premier platform for discovering startup events, pitch competitions, and entrepreneurship opportunities.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="#" />
+    <meta name="theme-color" content="#1e40af">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzFlNDBhZiIvPgo8cGF0aCBkPSJNOCAxNkwxNiA4TDI0IDE2TDE2IDI0TDggMTZaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#1e40af"/>
+                            <path d="M8 16L16 8L24 16L16 24L8 16Z" fill="white"/>
+                        </svg>
+                        <span>VentureNexus</span>
+                    </div>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#events" class="nav-link">Events</a>
+                    <a href="#e-cells" class="nav-link">E-Cells</a>
+                    <a href="#dashboard" class="nav-link">Dashboard</a>
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn btn--outline btn--sm">Login</button>
+                    <button class="btn btn--primary btn--sm">Sign Up</button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Discover Your Next
+                        <span class="gradient-text">Startup Adventure</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Connect with India's vibrant startup ecosystem. Find events, pitch competitions, 
+                        and networking opportunities tailored for students and entrepreneurs.
+                    </p>
+                    <div class="hero-search">
+                        <div class="search-container">
+                            <div class="search-icon">🔍</div>
+                            <input type="text" placeholder="Search events, locations, or topics..." class="search-input" id="heroSearch">
+                            <button class="search-btn">
+                                <span>Search with AI</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <button class="btn btn--primary btn--lg">Explore Events</button>
+                        <button class="btn btn--outline btn--lg">For E-Cells</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card floating">
+                        <div class="card-content">
+                            <div class="event-badge">Live Event</div>
+                            <h3>Startup Pitch Night</h3>
+                            <p>IIT Bombay • Tonight 7 PM</p>
+                            <div class="attendees">
+                                <div class="attendee-avatars">
+                                    <div class="avatar">👨‍💼</div>
+                                    <div class="avatar">👩‍💼</div>
+                                    <div class="avatar">👨‍🎓</div>
+                                </div>
+                                <span>+247 attending</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2847">0</div>
+                    <div class="stat-label">Total Events</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="125000">0</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="450">0</div>
+                    <div class="stat-label">E-Cells Registered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="8500">0</div>
+                    <div class="stat-label">Successful Connections</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events Section -->
+    <section class="featured-events" id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Events</h2>
+                <p>Discover handpicked events from India's top startup ecosystem</p>
+                <div class="event-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Expo">Expo</button>
+                    <button class="filter-btn" data-filter="Conference">Conference</button>
+                    <button class="filter-btn" data-filter="Meetup">Meetup</button>
+                    <button class="filter-btn" data-filter="Ideathon">Ideathon</button>
+                </div>
+            </div>
+            <div class="events-grid" id="eventsGrid">
+                <!-- Events will be populated by JavaScript -->
+            </div>
+            <div class="section-cta">
+                <button class="btn btn--outline btn--lg">View All Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Categories</h2>
+                <p>Explore events by type and find your perfect match</p>
+            </div>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Top E-Cells Section -->
+    <section class="top-ecells" id="e-cells">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top E-Cells</h2>
+                <p>Connect with India's most active entrepreneurship cells</p>
+            </div>
+            <div class="ecells-grid" id="ecellsGrid">
+                <!-- E-Cells will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Hear from entrepreneurs who found their breakthrough moments</p>
+            </div>
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonials will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Join thousands of entrepreneurs discovering opportunities on VentureNexus</p>
+                <div class="cta-buttons">
+                    <button class="btn btn--primary btn--lg">Get Started</button>
+                    <button class="btn btn--outline btn--lg">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect width="32" height="32" rx="8" fill="#1e40af"/>
+                                <path d="M8 16L16 8L24 16L16 24L8 16Z" fill="white"/>
+                            </svg>
+                            <span>VentureNexus</span>
+                        </div>
+                        <p>Connecting India's startup ecosystem, one event at a time.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#events">Discover Events</a></li>
+                        <li><a href="#e-cells">E-Cell Portal</a></li>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#ai-assistant">AI Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#entrepreneurs">Entrepreneurs</a></li>
+                        <li><a href="#students">Students</a></li>
+                        <li><a href="#investors">Investors</a></li>
+                        <li><a href="#mentors">Mentors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-credits">
+                    <p>&copy; 2025 VentureNexus. All rights reserved.</p>
+                    <p class="developer-credit">Developed by <strong>Suryansh Gupta</strong></p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank" class="social-link">Twitter</a>
+                    <a href="#" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="#" target="_blank" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant Chat -->
+    <div class="ai-chat" id="aiChat">
+        <div class="chat-header">
+            <span>AI Assistant</span>
+            <button class="chat-close" id="chatClose">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message bot">
+                <div class="message-content">
+                    👋 Hi! I'm your AI assistant. I can help you find events, answer questions about startups, or guide you through the platform. What would you like to know?
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" placeholder="Ask me anything..." class="chat-input" id="chatInput">
+            <button class="chat-send" id="chatSend">Send</button>
+        </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <button class="chat-fab" id="chatFab">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+    </button>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
