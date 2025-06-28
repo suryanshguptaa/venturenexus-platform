@@ -1364,7 +1364,7 @@ select.form-control {
 
 /* Footer */
 .footer {
-  background: var(--color-text);
+  
   color: white;
   padding: var(--space-32) 0 var(--space-16);
 }
